@@ -10,12 +10,12 @@ if (min + 45 < 60) {
     console.log(hour)
     console.log(min + 45)
 
-} else {
+} else if (min + 45 >= 60) {
     hours = hour + 1
     if (hours === 24 || hours > 24) {
         console.log(hours % 24)
     } else {
-        console.log(hours + 1)
+        console.log(hours)
     }
     console.log(min + 45 - 60)
 }
